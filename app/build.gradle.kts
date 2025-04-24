@@ -4,7 +4,6 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose") version "2.0.0" // ⚠️ Dòng quan trọng phải thêm
 }
 
-
 android {
     namespace = "com.giahung.lab3homework"
     compileSdk = 34
@@ -49,4 +48,7 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("io.coil-kt:coil-compose:2.4.0")
     implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.mlkit:object-detection:17.0.2")
+    // Add for await() with ML Kit Tasks
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.0")
 }
